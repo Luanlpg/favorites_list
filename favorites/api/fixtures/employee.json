@@ -1,0 +1,12 @@
+[
+  {
+    "model": "api.employee",
+    "pk": 999,
+    "fields": {
+      "name": "teste",
+      "email": "teste@teste.com",
+      "department": "testando",
+      "link": "http://localhost:8000/api/employee/teste/"
+    }
+  }
+]
