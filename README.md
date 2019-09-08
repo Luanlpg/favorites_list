@@ -29,7 +29,7 @@ Aplicativo para gerenciar informações dos funcionários, como nome, e-mail e d
 
 - Faça solicitação de token em: `POST - /api/user`
   - Prams(`username:string, first_name:string, last_name:string, email:string`)
-    - Obs: Seu token de autenticação será envia por email
+    - Obs: Seu token de autenticação será enviado via email
 
 - Faça consulta de cliente em: `GET - /api/<token>/client/`
 
