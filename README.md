@@ -15,8 +15,6 @@ Aplicativo para gerenciar informações dos funcionários, como nome, e-mail e d
 
 ## Rodando o server da API
 
-- Acesse o projeto django com: `cd favorites`
-
 - Rode as migrações do projeto: `python manage.py migrate`
 
 - Para rodar testes: `python manage.py test`
