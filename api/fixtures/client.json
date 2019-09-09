@@ -1,0 +1,11 @@
+[
+ {
+   "model": "api.clientmodel",
+   "pk": 1,
+   "fields": {
+ "name": "Teste Teste",
+ "email": "teste@teste.com",
+ "date_joined": "2019-09-09 18:12:12.929052-03:00"
+ }
+}
+]

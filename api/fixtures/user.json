@@ -1,0 +1,15 @@
+[
+  {
+    "model": "api.usermodel",
+    "pk": 999,
+    "fields": {
+      "username": "teste",
+      "first_name": "testando",
+      "last_name": "testando",
+      "email": "teste@teste.com",
+      "is_active": true,
+      "date_joined": "2019-09-09 18:12:12.929052-03:00",
+      "token": "ii4jr4j843j8jf48rj8j4r848jr8jr4"
+    }
+  }
+]

@@ -29,21 +29,21 @@ Aplicativo para gerenciar informações dos funcionários, como nome, e-mail e d
 
 - Faça solicitação de token em: `POST - /api/user`
   - Prams(`username:string, first_name:string, last_name:string, email:string`)
-    - Obs: Seu token de autenticação será envia por email
+    - Obs: Seu token de autenticação será enviado por email
 
-- Faça consulta de cliente em: `GET - /api/<token>/client/`
+- Faça consulta de cliente em: `GET - /api/<TOKEN>/client/`
 
-- Faça cadastro de cliente em: `POST - /api/<token>/client/`
+- Faça cadastro de cliente em: `POST - /api/<TOKEN>/client/`
   - Prams:(`name:string, email:string`)
 
-- Faça consulta de cliente especifico em: `GET - /api/<token>/client/<Email do cliente>`
+- Faça consulta de cliente especifico em: `GET - /api/<TOKEN>/client/<EMAIL-DO-CLIENTE>`
 
-- Faça edição de cliente especifico em: `PATCH - /api/<token>/client/<Email do cliente>`
+- Faça edição de cliente especifico em: `PATCH - /api/<TOKEN>/client/<EMAIL-DO-CLIENTE>`
   - Prams:(`name:string, email:string`)
 
-- Faça exclusão de cliente especifico em: `DELETE - /api/<token>/client/<Email do cliente>`
+- Faça exclusão de cliente especifico em: `DELETE - /api/<TOKEN>/client/<EMAIL-DO-CLIENTE>`
 
-- Faça consulta de produtos em lista de cliente em: `GET - /api/<token>/client/<Email do cliente>/list`
+- Faça consulta de produtos em lista de cliente em: `GET - /api/<TOKEN>/client/<EMAIL-DO-CLIENTE>/list`
 
-- Faça cadastro de produto em lista de cliente em: `POST - /api/<token>/client/<Email do cliente>/list`
+- Faça cadastro de produto em lista de cliente em: `POST - /api/<TOKEN>/client/<EMAIL-DO-CLIENTE>/list`
   - Prams:(`id:string`)

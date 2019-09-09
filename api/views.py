@@ -21,9 +21,9 @@ import requests
 import json
 
 class UserView(APIView):
-    """
-    View que cadastra usuário.
-    """
+    """=========================================================================\n
+    View que cadastra usuário.\n
+    ========================================================================="""
     serializer_class = UserSerializer
     email_service = EmailService()
 
@@ -41,9 +41,9 @@ class UserView(APIView):
 
 
 class ClientListView(APIView):
-    """
-    View que lista e cadastra clientes.
-    """
+    """=========================================================================\n
+    View que lista e cadastra clientes.\n
+    ========================================================================="""
     serializer_class = ClientSerializer
 
     def get(self, request, token, format=None):
@@ -70,9 +70,9 @@ class ClientListView(APIView):
 
 
 class ClientDetailView(APIView):
-    """
-    View que mostra, altera e apaga cliente.
-    """
+    """=========================================================================\n
+    View que mostra, altera e apaga cliente.\n
+    ========================================================================="""
     serializer_class = ClientSerializer
 
     def get_client(self, email):
@@ -112,15 +112,17 @@ class ClientDetailView(APIView):
             return Response(json.dumps({"token":"Não autorizado."}), status=status.HTTP_404_NOT_FOUND)
 
         client = self.get_client(email)
+        for favorite in FavoriteModel.objects.filter(id_client=client.id):
+            favorite.delete()
         client.delete()
 
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
 class FavoritesListView(APIView):
-    """
-    View que lista e cadastra favoritos.
-    """
+    """=========================================================================\n
+    View que lista e cadastra favoritos.\n
+    ========================================================================="""
     serializer_class = FavoriteSerializer
     id_serializer_class = FavoriteIdSerializer
 
