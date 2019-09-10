@@ -28,22 +28,22 @@ Aplicativo para gerenciar informações dos funcionários, como nome, e-mail e d
 - Acesse a root da API em: `GET - /api/`
 
 - Faça solicitação de token em: `POST - /api/user`
-  - Prams(`username:string, first_name:string, last_name:string, email:string`)
+  - Params(`username:string, first_name:string, last_name:string, email:string`)
     - Obs: Seu token de autenticação será enviado via email
 
 - Faça consulta de cliente em: `GET - api/<TOKEN>/client/`
 
 - Faça cadastro de cliente em: `POST - api/<TOKEN>/client/`
-  - Prams:(`name:string, email:string`)
+  - Params:(`name:string, email:string`)
 
 - Faça consulta de cliente especifico em: `GET - api/<TOKEN>/client/<EMAIL-DO-CLIENTE>/`
 
 - Faça edição de cliente especifico em: `PATCH - api/<TOKEN>/client/<EMAIL-DO-CLIENTE>/`
-  - Prams:(`name:string, email:string`)
+  - Params:(`name:string, email:string`)
 
 - Faça exclusão de cliente especifico em: `DELETE - api/<TOKEN>/client/<EMAIL-DO-CLIENTE>/`
 
 - Faça consulta de produtos em lista de cliente em: `GET - api/<TOKEN>/client/<EMAIL-DO-CLIENTE>/list/`
 
 - Faça cadastro de produto em lista de cliente em: `POST - api/<TOKEN>/client/<EMAIL-DO-CLIENTE>/list/`
-  - Prams:(`id:string`)
+  - Params:(`id:string`)
